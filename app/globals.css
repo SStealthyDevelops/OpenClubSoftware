@@ -15,6 +15,8 @@
     --background-end-rgb: 5, 5, 5;
     --card-background-start-rgb: 54, 54, 54;
     --card-background-end-rgb: 45, 45, 45;
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Roboto", sans-serif;
   }
 }
 
@@ -34,6 +36,16 @@ body {
   }
 }
 
+.title {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
 .card {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -42,5 +54,5 @@ body {
           rgb(var(--card-background-end-rgb))
   )
   rgb(var(--background-start-rgb));
-  font-family: 'Montserrat', 'Inter', 'Roboto', sans-serif;
+  font-family: --font-title, sans-serif;
 }

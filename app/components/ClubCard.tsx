@@ -1,5 +1,6 @@
 import React from "react";
 import {useRouter} from "next/navigation";
+import Image from "next/image";
 
 export type ClubInfo = {
     id: number,
@@ -7,7 +8,7 @@ export type ClubInfo = {
     slug: string,
     logo?: string,
     banner?: string,
-    description?: string ,
+    description?: string,
 }
 
 
@@ -22,13 +23,14 @@ const ClubCard:React.FC<ClubInfo> = ({id, name, slug, logo, banner, description}
             router.push(`/club/${id}`);
         }}>
             <div
-                className="flex flex-col m-4 min-h-64 card relative rounded-xl border border-blue-950 hover:scale-105 duration-200">
-                <div className="rounded-t-xl flex flex-row bg-cover bg-center"
+                className="flex flex-col m-4 min-h-64 h-fit card relative rounded-xl hover:scale-105 duration-200">
+                <div className="rounded-t-xl flex flex-row bg-cover bg-center h-24 border-4 border-b-0 border-gray-500"
                      style={{backgroundImage: `url('${banner}')`}}>
-                    <p className="text-xl m-5">{name}</p>
                 </div>
-                <div className="flex flex-1 p-5">
-                    <p>{description}</p>
+                <Image src="/square_image_plc.jpg" alt="Club Logo" height={100} width={100} className="absolute top-12 left-5 rounded-full"/>
+                <div className="flex flex-1 flex-col w-full p-5">
+                    <p className="text-xl m-1 title text-right">Extra Long {name}</p>
+                    <p className="mt-5 ">Lorem ipsum met dolor blah blah blah. {description}</p>
                 </div>
             </div>
         </button>
