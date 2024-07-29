@@ -11,8 +11,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 20, 20, 20;
+    --background-end-rgb: 5, 5, 5;
+    --card-background-start-rgb: 54, 54, 54;
+    --card-background-end-rgb: 45, 45, 45;
   }
 }
 
@@ -30,4 +32,15 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.card {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+          to bottom,
+          rgb(var(--card-background-start-rgb)),
+          rgb(var(--card-background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+  font-family: 'Montserrat', 'Inter', 'Roboto', sans-serif;
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import {Button, IconButton} from "@mui/material";
+import {ArrowForward} from "@mui/icons-material";
 
 export default function SetupPage() {
     const [step, setStep] = React.useState(0);
@@ -31,7 +33,9 @@ export default function SetupPage() {
 const WelcomePage: React.FC<{ nextStep: () => void; prevStep: () => void }> = ({nextStep, prevStep}) => (
     <div className="flex flex-col justify-between items-center h-[30vh]">
         <h1 className="text-7xl">Welcome!</h1>
-        {/*<Button variant="link" onClick={nextStep}><p className="m-16 text-3xl hover:underline decoration-2">Get started {"->"}</p></Button>*/}
+        <IconButton aria-label="Next" onClick={nextStep} size="large" className="">
+            <ArrowForward />
+        </IconButton>
 
     </div>
 );
