@@ -27,15 +27,11 @@ const ClubCard:React.FC<ClubInfo> = ({id, name, slug, logo, banner, description}
             router.push(`/club/${id}`);
         }}>
             <div className="flex flex-col m-4 min-h-64 h-fit card relative rounded-xl hover:scale-105 duration-200">
-                {/*<div className="rounded-t-xl flex flex-row bg-cover bg-center h-24 border-2 bg-blend-overlay border-b-0 border-gray-500 bg-gradient-to-b from-white to-gray-300"*/}
-                {/*     style={{backgroundImage: `url('${banner}')`}}*/}
-                {/*>*/}
                 <div
-                    className="relative rounded-t-xl flex flex-row bg-cover bg-center h-24 border-4 border-b-0 border-gray-500"
-                    style={{backgroundImage: `url('${banner}')`}}
+                    className="relative rounded-t-xl flex flex-row bg-cover bg-center h-24 border-4 border-b-0 border-gray-500" style={{backgroundImage: `url('${banner}')`}}
                 >
-                    <div
-                        className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-60 rounded-t-xl"></div>
+                    {/* GRADIENT OVERLAY */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-60 rounded-t-xl" />
             </div>
             <div className="flex flex-row">
                 <div className="w-fit h-fit items-start relative -mt-12 ml-5">

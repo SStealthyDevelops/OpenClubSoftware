@@ -2,6 +2,7 @@
 
 import ClubCard, {ClubInfo} from "@/app/components/ClubCard";
 import React from "react";
+import Footer from "@/app/components/Footer";
 
 
 export default function Home() {
@@ -10,18 +11,21 @@ export default function Home() {
     clubs.push({
       name: `Club Name ${i}`,
       id: i,
-      slug: `Club ${i}`
+      slug: `club_${i}`
     });
   }
   return (
-      <main className="flex flex-1 min-h-screen items-center justify-between m-5">
-        <div className="grid grid-cols-1 h-fit w-full md:grid-cols-2 xl:grid-cols-4 gap-1">
-          {
-            clubs.map((club, index) => (
-                <ClubCard {...club} key={index}/>
-            ))
-          }
-        </div>
-      </main>
+      <>
+          <main className="min-h-screen items-center justify-between m-5">
+              <div className="grid grid-cols-1 h-fit w-full md:grid-cols-2 xl:grid-cols-4 gap-1">
+                  {
+                      clubs.map((club, index) => (
+                          <ClubCard {...club} key={index}/>
+                      ))
+                  }
+              </div>
+          </main>
+          <Footer/>
+      </>
   );
 }
