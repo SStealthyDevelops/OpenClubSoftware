@@ -7,6 +7,8 @@ import Footer from "@/app/components/Footer";
 /**
  * Landing page with the grid of clubs
  * TODO: Searchbar, Navbar, Category search (and + or search functions), Footer
+ * Maybe download all club names and ids with initial load (for search function) and download additional data (imgs,
+ * desc, etc) as the club downloads
  */
 
 export default function Home() {
