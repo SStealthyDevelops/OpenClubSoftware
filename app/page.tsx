@@ -36,8 +36,8 @@ function ClubGrid() {
                 <div className="grid grid-cols-1 h-fit w-full md:grid-cols-2 xl:grid-cols-4 gap-1">
                     {
                         clubs.map((club, index) => (
-                            <ClubCardById id={club.id} key={index}/>
-                            // <ClubCard key={index} {...club} />
+                            // <ClubCardById id={club.id} key={index}/>
+                            <ClubCard key={index} {...club} />
                         ))
                     }
                 </div>

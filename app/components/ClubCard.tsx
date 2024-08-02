@@ -68,7 +68,7 @@ export const ClubCard: React.FC<ClubInfo> = ({id, name, slug, logo, banner, desc
             <div className="flex flex-col m-4 min-h-64 h-fit card relative rounded-xl hover:scale-105 duration-200 border-4" style={{borderColor: accent}}>
                 <div
                     className="relative rounded-[0.45rem] flex flex-row bg-cover bg-center h-24 border-b-0 bg-red-500"
-                    // style={{backgroundImage: `url('${banner}')`}}
+                    style={{backgroundImage: `url('${banner}')`}}
                 >
                     {/* GRADIENT OVERLAY */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-60 rounded-t-xl"/>
