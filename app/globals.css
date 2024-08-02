@@ -17,6 +17,7 @@
     --card-background-end-rgb: 45, 45, 45;
     --font-title: "Montserrat", sans-serif;
     --font-text: "Roboto", sans-serif;
+    --accent-color: #000
   }
 }
 
@@ -56,3 +57,4 @@ p {
   rgb(var(--background-start-rgb));
   font-family: --font-title, sans-serif;
 }
+
