@@ -33,7 +33,7 @@ function ClubGrid() {
         });
     }
     return (
-        <>
+
             <main className="min-h-screen items-center justify-between m-5">
                 <div className="grid grid-cols-1 h-fit w-full md:grid-cols-2 xl:grid-cols-4 gap-1">
                     {
@@ -44,6 +44,6 @@ function ClubGrid() {
                     }
                 </div>
             </main>
-        </>
+
     );
 }
