@@ -3,6 +3,7 @@
 import {ClubCard, ClubCardById, ClubInfo} from "@/app/components/ClubCard";
 import React from "react";
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 
 /**
  * Landing page with the grid of clubs
@@ -15,6 +16,7 @@ export default function Home() {
 
     return (
         <>
+            <Header />
             <ClubGrid />
             <Footer/>
         </>
