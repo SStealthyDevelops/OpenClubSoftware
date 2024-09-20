@@ -1,4 +1,5 @@
-#Open Club Management Software**
+# Open Club Management Software
+
 **By Satvik Mathur**
 
 Software work-in-progress as of Sept. 2024.
