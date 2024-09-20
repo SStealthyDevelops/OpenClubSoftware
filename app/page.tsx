@@ -3,6 +3,7 @@
 import {ClubCard, ClubCardById, ClubInfo} from "@/app/components/ClubCard";
 import React from "react";
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 
 /**
  * Landing page with the grid of clubs
@@ -15,6 +16,7 @@ export default function Home() {
 
     return (
         <>
+            <Header />
             <ClubGrid />
             <Footer/>
         </>
@@ -31,17 +33,17 @@ function ClubGrid() {
         });
     }
     return (
-        <>
+
             <main className="min-h-screen items-center justify-between m-5">
                 <div className="grid grid-cols-1 h-fit w-full md:grid-cols-2 xl:grid-cols-4 gap-1">
                     {
                         clubs.map((club, index) => (
-                            <ClubCardById id={club.id} key={index}/>
-                            // <ClubCard key={index} {...club} />
+                            // <ClubCardById id={club.id} key={index}/>
+                            <ClubCard key={index} {...club} />
                         ))
                     }
                 </div>
             </main>
-        </>
+
     );
 }

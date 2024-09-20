@@ -17,7 +17,7 @@
     --card-background-end-rgb: 45, 45, 45;
     --font-title: "Montserrat", sans-serif;
     --font-text: "Roboto", sans-serif;
-    --accent-color: #000
+    --accent-color: #fff
   }
 }
 
@@ -29,6 +29,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow: hidden
 }
 
 @layer utilities {
@@ -40,6 +41,10 @@ body {
 .title {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
+}
+
+.montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 p {
@@ -57,4 +62,6 @@ p {
   rgb(var(--background-start-rgb));
   font-family: --font-title, sans-serif;
 }
+
+
 
